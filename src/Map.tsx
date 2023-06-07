@@ -65,7 +65,7 @@ const MapComponent: React.FC = () => {
       }
 
       const GAYLE = "./images/gayle.png";
-      const PB = "./images/phoebeBridgers.png";
+      const PB = "./images/pb.png";
       const paramore = "./images/paramore.png";
       const red ="./images/girl_in_red.png";
       const muna ="./images/muna.png";
@@ -86,7 +86,7 @@ const MapComponent: React.FC = () => {
               icon = `<img src=${red} alt="girl in red" width="60px" style="padding:3px"/>`;
               break;
             case 'Phoebe Bridgers':
-              icon = `<img src=${PB} alt="Phoebe Bridgers" width="150px" style="padding:3px" />`;
+              icon = `<img src=${PB} alt="Phoebe Bridgers" width="190px" style="padding:3px" />`;
               break;
             case 'Paramore':
               icon = `<img src=${paramore} alt="paramore" width="80px" style="padding:3px" />`;

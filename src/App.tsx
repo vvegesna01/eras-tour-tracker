@@ -16,7 +16,7 @@ interface MarkerData {
 
 const App: React.FC = () => {
   const GAYLE = "./images/gayle.png";
-  const PB = "./images/phoebeBridgers.png";
+  const PB = "./images/pb.png";
   const paramore = "./images/paramore.png";
   const red = "./images/girl_in_red.png";
   const muna = "./images/muna.png";
@@ -46,18 +46,15 @@ const App: React.FC = () => {
     <div style={{ backgroundColor: "#2B324C" }}>
       {/* Header */}
       <Navbar />
-
       <div className="flex flex-col md:flex-row" style={{}}>
         <div
           className="bg-gray-800 shadow-lg rounded-lg items-center p-10 m-7"
           style={{ width: "75%" }}
         >
           <div className="flex items-center justify-between">
-            <h2
-              className="m-4 text-xl text-white font-semibold"
-              style={{ fontFamily: "era" }}
-            >
-              Next Tour Location: {city_title}
+            <h2 className="m-4 text-xl text-white font-semibold flex items-center" style={{ fontFamily: "era" }}>
+              <img src="./images/marker-icon.png" width={40} style={{ marginRight: "10px" }} />
+              <span>{`Next Tour Location: ${city_title}`}</span>
             </h2>
             {/* Buttons */}
             <div className="flex space-x-2">
@@ -74,12 +71,35 @@ const App: React.FC = () => {
                 International Dates
               </button>
             </div>
+
           </div>
           <Map />
+          <div style={{ whiteSpace: 'nowrap' }}>
+            <img src={GAYLE} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={red} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={muna} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={haim} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={paramore} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={PB} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={ga} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={bbdb} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+            <img src={owenn} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
+          </div>
+
         </div>
 
         {/* Start of Legend */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7" style={{ width: "25%" }}>
+          {/* <div style={{ whiteSpace: 'nowrap' }}>
+            <img src={GAYLE} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin:10 }} />
+            <img src={red} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin:10  }} />
+            <img src={muna} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin:10  }} />
+            <br/>
+            <img src={haim} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin:10  }} />
+            <img src={paramore} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin:10  }} />
+            <img src={PB} style={{ display: 'inline-block', verticalAlign: 'middle',width: 75, margin:10  }} />
+          </div> */}
+
           <img src="./images/eras-tour-poster.png" width={"1000"} alt="tour poster" />
 
           <h2 className="m-4 text-2xl text-white font-semibold" style={{ fontFamily: "era" }}>
