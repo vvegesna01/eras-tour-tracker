@@ -21,7 +21,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-03-17",
-	  "shows": 2
+	  "shows": 2,
+	  "openers": ["Paramore", "GAYLE"]
 	  
 	},
 	{
@@ -46,23 +47,24 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-03-24",
-	  "shows": 2
+	  "shows": 2,
+	  "openers": ["beabadobee", "GAYLE"]
 	},
 	{
 	  "original_address": "1 AT&T Way",
-	  "lat": 41.735141150000004,
-	  "lon": -86.33330521984945,
-	  "formatted": "1 AT&T Way, South Bend, IN 46628, United States of America",
+	  "lat": 32.7480,
+	  "lon": -97.0934,
+	  "formatted": "1 AT&T Way, Arlington, TX 76011, United States of America",
 	  "name": "",
 	  "housenumber": 1,
 	  "street": "AT&T Way",
 	  "district": "",
 	  "suburb": "",
 	  "postcode": 46628,
-	  "city": "South Bend",
-	  "county": "Saint Joseph County",
-	  "state": "Indiana",
-	  "state_code": "IN",
+	  "city": "Arlington",
+	  "county": "",
+	  "state": "Texas",
+	  "state_code": "TX",
 	  "country": "United States",
 	  "country_code": "us",
 	  "confidence": 1,
@@ -70,7 +72,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-03-31",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["beabadobee", "GAYLE", "Gracie Abrams", "MUNA"]
 	},
 	{
 	  "original_address": "4201 North Dale Mabry Highway",
@@ -94,7 +97,9 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-04-13",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["beabadobee", "GAYLE", "Gracie Abrams"]
+	  
 	},
 	{
 	  "original_address": "1 NRG Parkway",
@@ -118,7 +123,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-04-21",
-	  "shows": 2
+	  "shows": 2,
+	  "openers": ["beabadobee", "Gracie Abrams"]
 	},
 	{
 	  "original_address": "1 AMB Drive Northwest",
@@ -142,7 +148,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-04-28",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["beabadobee", "GAYLE", "Gracie Abrams", "MUNA"]
 	},
 	{
 	  "original_address": "1 Titans Way",
@@ -166,7 +173,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-05-05",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["Phoebe Bridgers", "GAYLE", "Gracie Abrams"]
 	},
 	{
 	  "original_address": "1020 Pattison Avenue",
@@ -190,7 +198,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-05-12",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["Phoebe Bridgers", "GAYLE", "Gracie Abrams"]
 	},
 	{
 	  "original_address": "1 MetLife Stadium Drive",
@@ -214,7 +223,8 @@
 	  "attribution_license": "BSD-3-Clause License",
 	  "attribution_url": "",
 	  "date":"2023-05-26",
-	  "shows": 3
+	  "shows": 3,
+	  "openers": ["Phoebe Bridgers", "GAYLE", "Gracie Abrams"]
 	},
 	{
 	  "original_address": "1410 Special Olympics Drive",
@@ -382,7 +392,8 @@
 	  "attribution_license": "Open Database License",
 	  "attribution_url": "https://www.openstreetmap.org/copyright",
 	  "date":"2023-07-22",
-	  "shows": 2
+	  "shows": 2,
+	  "openers": ["Paramore", "GAYLE"]
 	},
 	{
 	  "original_address": "1001 South Stadium Drive",

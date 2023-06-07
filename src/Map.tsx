@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import L, { Marker } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import markerIcon from './marker-icon.png'; // Import a custom marker icon if desired
+import markerIcon from './marker-icon.png';
 import futureIcon from './future-marker-icon.png';
 import completedIcon from './completed-marker-icon.png';
 
-import markerData from './data/na_leg_res.json';
+import markerData from './data/usa.json';
 
 interface MarkerData {
   lat: number;
@@ -14,9 +14,8 @@ interface MarkerData {
   city: string;
   date: string;
   shows: number;
-  
+  openers: [string];
 }
-
 
 const MapComponent: React.FC = () => {
   const [map, setMap] = useState<L.Map | null>(null);
@@ -24,6 +23,7 @@ const MapComponent: React.FC = () => {
 
   useEffect(() => {
     const newMap = L.map('map').setView([37.0902, -95.7129], 4);
+    
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; OpenStreetMap contributors',
@@ -32,20 +32,19 @@ const MapComponent: React.FC = () => {
     }).addTo(newMap);
 
     const customIcon = L.icon({
-      iconUrl: markerIcon, // Custom marker icon URL
-      iconSize: [80, 112], // size of the icon
-      iconAnchor: [40, 90], // point of the icon which will correspond to marker's location
+      iconUrl: markerIcon,
+      iconSize: [80, 112],
+      iconAnchor: [40, 90],
       popupAnchor: [-3, -76],
     });
 
     const sortedMarkerData = [...markerData].sort(
-      (a: MarkerData, b: MarkerData) =>
-        new Date(a.date).getTime() - new Date(b.date).getTime()
-    ); // Sort markers by date
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+    );
 
     const newMarkers: Marker[] = [];
     sortedMarkerData.forEach((marker, index) => {
-      const { lat, lon, city, date, shows} = marker;
+      const { lat, lon, city, date, shows, openers } = marker;
       const markerOptions: L.MarkerOptions = {
         icon: customIcon,
       };
@@ -54,21 +53,77 @@ const MapComponent: React.FC = () => {
       const markerDate = new Date(date);
 
       if (markerDate <= currentDate) {
-        // Completed date
         markerOptions.icon = L.icon({
           ...customIcon.options,
-          iconUrl: completedIcon, // Set completed marker icon URL
+          iconUrl: completedIcon,
         });
       } else {
-        // Future date
         markerOptions.icon = L.icon({
           ...customIcon.options,
-          iconUrl: futureIcon, // Set future marker icon URL
+          iconUrl: futureIcon,
         });
       }
 
-      const mapMarker = new Marker([lat, lon], markerOptions)
-        .bindPopup(`<b>${city}</b><br>Date: ${date}<br>Shows: ${shows}`);
+      const GAYLE = "./images/gayle.png";
+      const PB = "./images/phoebeBridgers.png";
+      const paramore = "./images/paramore.png";
+      const red ="./images/girl_in_red.png";
+      const muna ="./images/muna.png";
+      const ga = "./images/gracieAbrams.png";
+      const haim ="./images/haim.png";
+      const bbdb = "./images/bbdb.png";
+      const owenn ="./images/owenn.png";
+
+      const getOpenerIcons = (openers: string[]) => {
+        const openerIcons = openers.map((opener, index) => {
+          let icon = null;
+
+          switch (opener) {
+            case 'GAYLE':
+              icon = `<img src=${GAYLE} alt="Gayle" width="90px" style="padding:3px"/>`;
+              break;
+            case 'girl in red':
+              icon = `<img src=${red} alt="girl in red" width="60px" style="padding:3px"/>`;
+              break;
+            case 'Phoebe Bridgers':
+              icon = `<img src=${PB} alt="Phoebe Bridgers" width="150px" style="padding:3px" />`;
+              break;
+            case 'Paramore':
+              icon = `<img src=${paramore} alt="paramore" width="80px" style="padding:3px" />`;
+              break;
+            case 'MUNA':
+              icon = `<img src=${muna} alt="muna" width="80px" style="padding:3px"/>`;
+              break;
+            case 'Gracie Abrams':
+              icon = `<img src=${ga} alt="gracie abrams" width="2000px" style="padding:3px" />`;
+              break;
+            case 'HAIM':
+                icon = `<img src=${haim} alt="haim" width="80px" style="padding:3px"/>`;
+                break;
+            case 'beabadobee':
+                icon = `<img src=${bbdb} alt="bbdb" width="80px"style="padding:3px" />`;
+                break;
+            case 'OWENN':
+                icon = `<img src=${owenn} alt="owenn" width="80px" style="padding:3px"/>`;
+                break;
+          }
+
+          return icon;
+        });
+
+        return openerIcons.join('');
+      };
+
+      const openerIcons = getOpenerIcons(openers);
+      const mapMarker = new Marker([lat, lon], markerOptions).bindPopup(`
+          <div style="background-color: silver; font-family: nine; color: white; padding: 10px; margin-bottom: 10px;">
+        
+          <b>${city}</b><br />
+          Date: ${date}<br />
+          Shows: ${shows}<br />
+          ${openerIcons}
+        </div>
+      `);
 
       newMarkers.push(mapMarker);
     });
@@ -92,11 +147,7 @@ const MapComponent: React.FC = () => {
 
         markers[currentIndex].addTo(map);
         currentIndex++;
-
-        // if (currentIndex > 0) {
-        //   markers[currentIndex - 1].removeFrom(map);
-        // }
-      }, 350); // Adjust the interval duration as desired
+      }, 350);
 
       return () => {
         clearInterval(interval);

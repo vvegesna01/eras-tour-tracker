@@ -1,16 +1,27 @@
 import React from 'react';
 
-
 export const Navbar: React.FC = () => {
-  
   return (
-	<div className='items-center'>
-		<div className="p-10">
-        <div>
-          <h1 className="font-bold text-white text-4xl" style={{ fontFamily: 'era', textAlign: 'center' }}>TAYLOR SWIFT: THE ERAS TOUR TRACKER</h1>
-		  <h1 className="text-white text-xl" style={{ fontFamily: 'folklore', textAlign: 'center' }}>Click on the map markers to see the dates and shows for each!</h1>
+    <div className='items-center'>
+      <div className="">
+        <div className='bg-gray-800 shadow-lg p-5'>
+          <a href="/">
+            <h1 className="font-semibold text-white text-4xl hover:opacity-75 transition hover:scale-105" style={{ fontFamily: 'era', textAlign: 'center' }}>THE ERAS TOUR TRACKER</h1>
+          </a>
+          <h1 className="text-white text-xl" style={{ fontFamily: 'folklore', textAlign: 'center' }}>Click on the map markers to see the dates and openers for each!</h1>
+        </div>
+        <div className="absolute top-0 right-0 mt-3 mr-3 hover:opacity-75 transition hover:scale-110">
+          <a href="https://github.com/vvegesna01">
+          <button
+            className="rounded-full p-2"
+            style={{ width: '90px', height: '40px', border: 'none', outline: 'none' }}
+          >
+            {
+              <img src="./images/github-icon-t.png"></img>
+            }
+          </button> </a>
         </div>
       </div>
-	</div>
-
-  )}
+    </div>
+  );
+}
