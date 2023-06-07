@@ -15,6 +15,7 @@ const App: React.FC = () => {
         <div className="bg-gray-800 shadow-lg rounded-lg items-center p-10 m-7" style={{ width: "75%" }}>
           <Map />
         </div>
+        
 
         {/* Start of Legend */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7" style={{ width: "25%" }}>
