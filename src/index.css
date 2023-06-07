@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: "#2B324C";
+  }
+  
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+  }
+  
+
+  @font-face {
+	font-family: 'era';
+	src: local('era'), url(./fonts/era.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+	font-family: 'folklore';
+	src: local('folklore'), url(./fonts/folklore.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+	font-family: 'Debut';
+	src: local('Debut'), url(./fonts/Debut.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'Fearless';
+	src: local('Fearless'), url(./fonts/Fearless.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'Speak-Now';
+	src: local('Speak-Now'), url(./fonts/Speak-Now.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'Red';
+	src: local('Red'), url(./fonts/Red.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'nine';
+	src: local('nine'), url(./fonts/nine.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'reputation';
+	src: local('reputation'), url(./fonts/reputation.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
+  
+  @font-face {
+	font-family: 'Lover';
+	src: local('Lover'), url(./fonts/Lover.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+  }
