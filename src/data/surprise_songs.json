@@ -1,0 +1,68 @@
+[
+	{
+		"album":"Taylor Swift",
+		"songs": 7,
+		"color": "#B6D0B4",
+		"font": "debut"
+	},
+	{
+		"album":"Fearless",
+		"songs": 10,
+		"color": "#F1C686",
+		"font": "fearless"
+	},
+	{
+		"album":"Speak Now",
+		"songs": 5,
+		"color": "#CCACCD",
+		"font": "Speak-Now"
+	},
+	{
+		"album":"RED",
+		"songs": 11,
+		"color": "#7E3745",
+		"font": "red"
+	},
+	{
+		"album":"1989",
+		"songs": 7,
+		"color": "#B0D9E9",
+		"font": "nine"
+	},
+	{
+		"album":"reputation",
+		"songs": 2,
+		"color": "#797375",
+		"font": "reputation"
+	},
+	{
+		"album":"lover",
+		"songs": 3,
+		"color": "#F8B4D0",
+		"font": "lover"
+	},
+	{
+		"album":"folklore",
+		"songs": 4,
+		"color": "#D0CBC4",
+		"font": "folklore"
+	},
+	{
+		"album":"evermore",
+		"songs": 3,
+		"color": "#C7AE95",
+		"font": "folklore"
+	},
+	{
+		"album":"midnights",
+		"songs": 8,
+		"color": "#313851",
+		"font": "midnights"
+	},
+	{
+		"album":"other",
+		"songs": 1,
+		"color": "#c4c7d0",
+		"font": "midnights"
+	}
+]

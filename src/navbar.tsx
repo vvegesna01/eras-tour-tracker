@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
           <a href="/">
             <h1 className="font-semibold text-white text-4xl hover:opacity-75 transition hover:scale-105" style={{ fontFamily: 'era', textAlign: 'center' }}>THE ERAS TOUR TRACKER</h1>
           </a>
-          <h1 className="text-white text-xl" style={{ fontFamily: 'folklore', textAlign: 'center' }}>Click on the map markers to see the dates and openers for each!</h1>
+          <h1 className="text-white text-xl" style={{ fontFamily: 'folklore', textAlign: 'center' }}>Click on the map markers to see the dates and openers for each show!</h1>
         </div>
         <div className="absolute top-0 right-0 mt-3 mr-3 hover:opacity-75 transition hover:scale-110">
           <a href="https://github.com/vvegesna01">
@@ -21,6 +21,7 @@ export const Navbar: React.FC = () => {
             }
           </button> </a>
         </div>
+
       </div>
     </div>
   );

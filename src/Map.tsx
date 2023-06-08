@@ -33,8 +33,8 @@ const MapComponent: React.FC = () => {
 
     const customIcon = L.icon({
       iconUrl: markerIcon,
-      iconSize: [80, 112],
-      iconAnchor: [40, 90],
+      iconSize: [60, 60],
+      iconAnchor: [30, 50],
       popupAnchor: [-3, -76],
     });
 
@@ -65,7 +65,7 @@ const MapComponent: React.FC = () => {
       }
 
       const GAYLE = "./images/gayle.png";
-      const PB = "./images/pb.png";
+      const PB = "./images/PhoebeBridgers.png";
       const paramore = "./images/paramore.png";
       const red ="./images/girl_in_red.png";
       const muna ="./images/muna.png";
