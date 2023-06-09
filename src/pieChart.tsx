@@ -1,9 +1,8 @@
-"use client";
 import React, { useState } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import data from "./data/surprise_songs.json";
 
-const PieChartComponent = () => {
+const PieChartComponent: React.FC = () => {
   const [activeSlice, setActiveSlice] = useState<number | null>(null);
 
   const handlePieClick = (data: any, index: number) => {
@@ -14,38 +13,47 @@ const PieChartComponent = () => {
     const { album, songs } = entry;
 
     if (entry.index === activeSlice) {
-      return `${album}: ${songs} Songs`;
+      return `${songs} Songs`;
     }
-
 
     return album;
   };
-  
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <PieChart>
-        <Pie
-          dataKey="songs"
-          data={data}
-          cx="50%"
-          cy="50%"
-          outerRadius={130}
-          fill="black"
-          label={renderLabel}
-          onClick={handlePieClick}
-		  fontFamily={"nine"}
-		  
-        >
-          {
-            data.map((entry, index) => (
+    <div className="pie-chart-container">
+      <ResponsiveContainer width="100%" height={400}>
+        <PieChart>
+          <Pie
+            dataKey="songs"
+            data={data}
+            cx="50%"
+            cy="50%"
+            outerRadius={130}
+            fill="black"
+            label={renderLabel}
+            onClick={handlePieClick}
+            fontFamily="nine"
+          >
+            {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.color} />
-            ))
+            ))}
+          </Pie>
+        </PieChart>
+      </ResponsiveContainer>
+      {/* <style>{`
+        .pie-chart-container {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+          .pie-chart-container {
+            max-width: none;
           }
-        </Pie>
-        {/* <Legend align="center" /> */}
-      </PieChart>
-    </ResponsiveContainer>
+        }
+      `}</style> */}
+    </div>
   );
 };
 

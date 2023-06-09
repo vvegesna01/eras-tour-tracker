@@ -10,18 +10,16 @@ export const Navbar: React.FC = () => {
           </a>
           <h1 className="text-white text-2xl" style={{ fontFamily: 'folklore', textAlign: 'center' }}>Click on the map markers to see the dates and openers for each show!</h1>
         </div>
-        <div className="absolute top-0 right-0 mt-3 mr-3 hover:opacity-75 transition hover:scale-110">
+        <div className="absolute top-1 right-0 hover:opacity-75 transition hover:scale-110">
           <a href="https://github.com/vvegesna01">
-          <button
-            className="rounded-full p-2"
-            style={{ width: '90px', height: '40px', border: 'none', outline: 'none' }}
-          >
-            {
-              <img src="./images/github-icon-t.png"></img>
-            }
-          </button> </a>
+            <button
+              className="rounded-full p-2"
+              style={{ width: '90px', height: '40px', border: 'none', outline: 'none' }}
+            >
+              <img src="./images/github-icon-t.png" alt="GitHub Icon" />
+            </button>
+          </a>
         </div>
-
       </div>
     </div>
   );

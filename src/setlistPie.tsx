@@ -14,7 +14,7 @@ export const SetlistPie = () => {
     const { album, songs } = entry;
 
     if (entry.index === activeSlice) {
-      return `${album}: ${songs} Songs`;
+      return `${songs} Songs`;
     }
 
 
