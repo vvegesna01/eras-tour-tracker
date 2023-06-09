@@ -61,23 +61,23 @@ const App: React.FC = () => {
         >
           <div className="flex items-center justify-between">
             <h2
-              className="m-4 text-xl text-white font-semibold flex items-center animate-slide-in"
+              className="m-4 text-2xl text-white font-semibold flex items-center animate-slide-in"
               style={{ fontFamily: "era" }}
             >
               <img src="./images/marker-icon.png" width={40} style={{ marginRight: "10px" }} />
               <span>{`Next Tour Location: ${city_title}`}</span>
-              <span>{`Next Tour Date: ${city_date}`}</span>
+              <span >{`Next Tour Date: ${city_date}`}</span>
             </h2>
             {/* Buttons */}
             <div className="flex space-x-2">
               <button
-                className="py-0.5 px-1 text-white text-sm rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-lg m-5 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#b8acd1" }}
               >
                 North American Leg
               </button>
               <button
-                className="py-0.5 px-1 text-white text-sm rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-lg m-5 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#526d85" }}
               >
                 International Dates
@@ -99,7 +99,7 @@ const App: React.FC = () => {
           </div>
 
           <h2
-            className="m-4 text-md text-white font-semibold flex items-center animate-slide-in"
+            className="m-4 text-xl text-white font-semibold flex items-center animate-slide-in"
             style={{ fontFamily: "nine" }}
           >
             <span>{`Next Openers: ${city_opener}`}</span>
@@ -109,23 +109,23 @@ const App: React.FC = () => {
 
         {/* Start of Legend */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: "25%" }}>
-          <h2 className="m-4 text-sm text-white" style={{ fontFamily: "nine" }}>
+          <h2 className="m-4 text-lg text-white" style={{ fontFamily: "nine" }}>
             Welcome to the Era's Tour Tracker! International dates and locations will be updated soon ☺
           </h2>
           <img src="./images/eras-tour-poster.png" style={{ width: 1000, boxShadow: "90" }} className='rounded-lg' alt="tour poster" />
 
-          <h2 className="m-3 text-xl text-white font-semibold" style={{ fontFamily: "era" }}>
+          <h2 className="m-3 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Legend
           </h2>
           <div className="flex items-center space-x-2 mb-2">
             <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-            <span className="text-white text-2xl" style={{ fontFamily: "folklore" }}>
+            <span className="text-white text-3xl" style={{ fontFamily: "folklore" }}>
               Future Locations
             </span>
           </div>
           <div className="flex items-center space-x-2 mb-2">
             <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-            <span className="text-white text-2xl" style={{ fontFamily: "folklore" }}>
+            <span className="text-white text-3xl" style={{ fontFamily: "folklore" }}>
               Completed Locations
             </span>
           </div>
@@ -138,10 +138,10 @@ const App: React.FC = () => {
 
         {/* Surprise Song Analytics */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: "50%" }}>
-          <h2 className="m-3 text-2xl text-white font-semibold" style={{ fontFamily: "era" }}>
+          <h2 className="m-3 text-4xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Surprise Song Analytics
           </h2>
-          <p className="text-white text-xl ml-2" style={{ fontFamily: "folklore" }}>click on the components to see how many songs were played for each album :)</p>
+          <p className="text-white text-2xl ml-2" style={{ fontFamily: "folklore" }}>click on the components to see how many songs were played for each album :)</p>
           <PieChartComponent />
 
           <a href="https://www.benlilley.dev/eras-tour-surprise-songs/" className="m-4 text-xl text-white underline hover:text-blue" style={{ fontFamily: "era" }}>Surprise Song Tracker Website</a>
@@ -150,10 +150,10 @@ const App: React.FC = () => {
         {/* Setlist Analytics */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: "50%" }}>
 
-          <h2 className="m-3 text-2xl text-white font-semibold" style={{ fontFamily: "era" }}>
+          <h2 className="m-3 text-4xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Setlist Songs
           </h2>
-          <p className="text-white text-xl ml-2" style={{ fontFamily: "folklore" }}>1 song on Speak Now is a crime i'm sorry but a 45 song set is a blessing, she's GIVING</p>
+          <p className="text-white text-2xl ml-2" style={{ fontFamily: "folklore" }}>1 song on Speak Now is a crime i'm sorry but a 45 song set is a blessing, she's GIVING</p>
           <SetlistPie/>
         </div>
       </div>
