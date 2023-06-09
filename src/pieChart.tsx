@@ -33,6 +33,7 @@ const PieChartComponent: React.FC = () => {
             label={renderLabel}
             onClick={handlePieClick}
             fontFamily="nine"
+            
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.color} />

@@ -72,12 +72,12 @@ const App: React.FC = () => {
       <div className="grid md:flex md:flex-row">
         <div
           className="bg-gray-800 shadow-lg rounded-lg items-center p-10 m-7"
-          style={{ width: isMobile ? "90%" : "75%" }}
+          style={{ width: isMobile ? "80%" : "75%" }}
         >
           <div className="flex items-center justify-between">
             <h2
               className="text-2xl text-white font-semibold flex items-center animate-slide-in"
-              style={{ fontFamily: "era" }}
+              style={{ fontFamily: "era"}}
             >
               <img src="./images/marker-icon.png" width={40} />
               <span>{`Next Show: ${city_title}, ${city_date}`}</span>
@@ -93,14 +93,14 @@ const App: React.FC = () => {
               </button>
               <button
                 className="py-0.5 px-1 text-white text-sm m-5 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
-                style={{ fontFamily: "nine", backgroundColor: "#526d85", padding:10 }}
+                style={{ fontFamily: "nine", backgroundColor: "#526d85", padding:5 }}
               >
                 International Dates
               </button>
             </div>
           </div>
           <Map />
-          <div style={{width: isMobile ? "90%" : "75%" }} className="animate-slide-up">
+          <div style={{width: isMobile ? "80%" : "75%" }} className="animate-slide-up">
             <img src={GAYLE} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
             <img src={red} style={{ display: 'inline-block', verticalAlign: 'middle', width: 45, margin: 10 }} />
             <img src={muna} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
@@ -122,7 +122,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Start of Legend */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "90%" : "25%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "25%" }}>
           <h2 className="m-4 text-lg text-white" style={{ fontFamily: "nine" }}>
             Welcome to the Era's Tour Tracker! International dates and locations will be updated soon ☺
           </h2>
@@ -152,7 +152,7 @@ const App: React.FC = () => {
       <div className="flex flex-col md:flex-row" style={{}}>
 
         {/* Surprise Song Analytics */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "90%" : "90%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
           <h2 className="p-5 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Surprise Song Analytics
           </h2>
@@ -171,7 +171,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Setlist Analytics */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "90%" : "90%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
 
           <h2 className="p-5 m-3 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Setlist Songs
