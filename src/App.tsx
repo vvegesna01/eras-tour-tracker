@@ -61,7 +61,7 @@ const App: React.FC = () => {
         >
           <div className="flex items-center justify-between">
             <h2
-              className="m-4 text-2xl text-white font-semibold flex items-center animate-slide-in"
+              className="m-5 text-2xl text-white font-semibold flex items-center animate-slide-in"
               style={{ fontFamily: "era" }}
             >
               <img src="./images/marker-icon.png" width={40} style={{ marginRight: "10px" }} />
@@ -71,13 +71,13 @@ const App: React.FC = () => {
             {/* Buttons */}
             <div className="flex space-x-2">
               <button
-                className="py-0.5 px-1 text-white text-lg m-5 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-sm m-5 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#b8acd1" }}
               >
                 North American Leg
               </button>
               <button
-                className="py-0.5 px-1 text-white text-lg m-5 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-sm m-5 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#526d85" }}
               >
                 International Dates
@@ -138,7 +138,7 @@ const App: React.FC = () => {
 
         {/* Surprise Song Analytics */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: "50%" }}>
-          <h2 className="m-3 text-4xl text-white font-semibold" style={{ fontFamily: "era" }}>
+          <h2 className="m-3 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Surprise Song Analytics
           </h2>
           <p className="text-white text-2xl ml-2" style={{ fontFamily: "folklore" }}>click on the components to see how many songs were played for each album :)</p>
@@ -150,7 +150,7 @@ const App: React.FC = () => {
         {/* Setlist Analytics */}
         <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: "50%" }}>
 
-          <h2 className="m-3 text-4xl text-white font-semibold" style={{ fontFamily: "era" }}>
+          <h2 className="m-3 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Setlist Songs
           </h2>
           <p className="text-white text-2xl ml-2" style={{ fontFamily: "folklore" }}>1 song on Speak Now is a crime i'm sorry but a 45 song set is a blessing, she's GIVING</p>

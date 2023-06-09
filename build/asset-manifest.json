@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e24f7945.css",
-    "main.js": "/static/js/main.6c06f364.js",
+    "main.css": "/static/css/main.24b30566.css",
+    "main.js": "/static/js/main.a06a23ac.js",
     "static/js/787.7d64f898.chunk.js": "/static/js/787.7d64f898.chunk.js",
+    "static/media/folklore.ttf": "/static/media/folklore.8973882ce809326e9fe3.ttf",
+    "static/media/nine.ttf": "/static/media/nine.9c63b3d3b1e52195228a.ttf",
+    "static/media/Speak-Now.otf": "/static/media/Speak-Now.60dd70c5370b62948eae.otf",
+    "static/media/Lover.ttf": "/static/media/Lover.58811532d7cd1609962d.ttf",
+    "static/media/Debut.ttf": "/static/media/Debut.1f6a27453981c9c97b0a.ttf",
+    "static/media/reputation.otf": "/static/media/reputation.5f68820823f695610b13.otf",
+    "static/media/Red.ttf": "/static/media/Red.9d9c3df1b520ae9714c3.ttf",
     "static/media/era.otf": "/static/media/era.0b400c3fbbaa116d6357.otf",
+    "static/media/Fearless.otf": "/static/media/Fearless.06d92876f6b4f12f51a3.otf",
     "index.html": "/index.html",
-    "main.e24f7945.css.map": "/static/css/main.e24f7945.css.map",
-    "main.6c06f364.js.map": "/static/js/main.6c06f364.js.map",
+    "main.24b30566.css.map": "/static/css/main.24b30566.css.map",
+    "main.a06a23ac.js.map": "/static/js/main.a06a23ac.js.map",
     "787.7d64f898.chunk.js.map": "/static/js/787.7d64f898.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e24f7945.css",
-    "static/js/main.6c06f364.js"
+    "static/css/main.24b30566.css",
+    "static/js/main.a06a23ac.js"
   ]
 }
