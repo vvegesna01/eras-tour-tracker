@@ -73,14 +73,14 @@ const MapComponent: React.FC = () => {
       }
 
       const GAYLE = "./images/gayle.png";
-      const PB = "./images/PhoebeBridgers.png";
-      const paramore = "./images/paramore.png";
-      const red ="./images/girl_in_red.png";
-      const muna ="./images/muna.png";
-      const ga = "./images/gracieAbrams.png";
-      const haim ="./images/haim.png";
-      const bbdb = "./images/bbdb.png";
-      const owenn ="./images/owenn.png";
+  const PB = "./images/phoebe-ghost.png";
+  const paramore = "./images/paramore-logo.png";
+  const red = "./images/girlinredlogo.png";
+  const muna = "./images/muna-logo2.png";
+  const ga = "./images/gracieAbrams.png";
+  const haim = "./images/haim.png";
+  const bbdb = "./images/bbdb.png";
+  const owenn = "./images/owenn.png";
 
       const getOpenerIcons = (openers: string[]) => {
         const openerIcons = openers.map((opener, index) => {
