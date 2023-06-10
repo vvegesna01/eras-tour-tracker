@@ -13,13 +13,13 @@
 	},
 	{
 		"album":"Speak Now",
-		"songs": 5,
+		"songs": 6,
 		"color": "#CCACCD",
 		"font": "Speak-Now"
 	},
 	{
 		"album":"RED",
-		"songs": 11,
+		"songs": 12,
 		"color": "#7E3745",
 		"font": "red"
 	},
