@@ -28,7 +28,7 @@ const PieChartComponent: React.FC = () => {
             data={data}
             cx="50%"
             cy="50%"
-            outerRadius={130}
+            outerRadius={100}
             fill="black"
             label={renderLabel}
             onClick={handlePieClick}

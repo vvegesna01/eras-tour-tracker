@@ -156,9 +156,11 @@ const App: React.FC = () => {
           <h2 className="p-5 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Surprise Song Analytics
           </h2>
+          
           <p className="text-white text-2xl ml-2" style={{ fontFamily: "folklore" }}>
             Click on the components to see how many songs were played for each album :)
           </p>
+          
           <PieChartComponent />
 
           <a
@@ -168,6 +170,10 @@ const App: React.FC = () => {
           >
             Surprise Song Tracker Website
           </a>
+          <p className="text-white text-lg ml-5" style={{ fontFamily: "folklore" }}>
+            Updated Jun 10, 2023 (Michigan Night 1)
+          </p>
+          
         </div>
 
         {/* Setlist Analytics */}

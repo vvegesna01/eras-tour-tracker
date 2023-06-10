@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import markerIcon from './marker-icon.png';
 import futureIcon from './future-marker-icon.png';
 import completedIcon from './completed-marker-icon.png';
-
+import redIcon from './redIcon.png';
 import markerData from './data/usa.json';
 
 interface MarkerData {
@@ -57,7 +57,15 @@ const MapComponent: React.FC = () => {
           ...customIcon.options,
           iconUrl: completedIcon,
         });
-      } else {
+
+      } else if (markerDate ==  currentDate){
+        markerOptions.icon = L.icon({
+          ...customIcon.options,
+          iconUrl: redIcon,
+        });
+
+      }
+      else {
         markerOptions.icon = L.icon({
           ...customIcon.options,
           iconUrl: futureIcon,
