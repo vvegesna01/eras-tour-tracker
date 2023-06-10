@@ -13,7 +13,7 @@ const PieChartComponent: React.FC = () => {
     const { album, songs } = entry;
 
     if (entry.index === activeSlice) {
-      return `${songs} Songs`;
+      return `${songs}`;
     }
 
     return album;
@@ -28,7 +28,7 @@ const PieChartComponent: React.FC = () => {
             data={data}
             cx="50%"
             cy="50%"
-            outerRadius={100}
+            outerRadius={70}
             fill="black"
             label={renderLabel}
             onClick={handlePieClick}

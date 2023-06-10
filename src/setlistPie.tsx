@@ -14,7 +14,7 @@ export const SetlistPie = () => {
     const { album, songs } = entry;
 
     if (entry.index === activeSlice) {
-      return `${songs} Songs`;
+      return `${songs}`;
     }
 
 
@@ -30,7 +30,7 @@ export const SetlistPie = () => {
           data={data}
           cx="50%"
           cy="50%"
-          outerRadius={100}
+          outerRadius={70}
           fill="black"
           label={renderLabel}
           onClick={handlePieClick}
