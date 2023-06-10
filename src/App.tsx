@@ -72,32 +72,34 @@ const App: React.FC = () => {
       <div className="grid md:flex md:flex-row">
         <div
           className="bg-gray-800 shadow-lg rounded-lg items-center p-10 m-7"
-          style={{ width: isMobile ? "80%" : "75%" }}
+          style={{ width: isMobile ? "75%" : "75%" }}
         >
           <div className="flex items-center justify-between">
             <h2
               className="text-2xl text-white font-semibold flex items-center animate-slide-in"
               style={{ fontFamily: "era"}}
             >
-              <img src="./images/marker-icon.png" width={40} />
+              <img src="./images/marker-icon.png" width={40} style={{padding:"20"}}/>
               <span>{`Next Show: ${city_title}, ${city_date}`}</span>
               {/* <span>{`Next Tour Date: ${city_date}`}</span> */}
-            </h2>
+            
+
             {/* Buttons */}
             <div className="flex space-x-2">
               <button
-                className="py-0.5 px-1 text-white text-sm m-5 rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-sm rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#b8acd1", padding:10 }}
               >
                 North American Leg
               </button>
               <button
-                className="py-0.5 px-1 text-white text-sm m-5 rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
+                className="py-0.5 px-1 text-white text-sm rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 animate-fade-in"
                 style={{ fontFamily: "nine", backgroundColor: "#526d85", padding:5 }}
               >
                 International Dates
               </button>
             </div>
+            </h2>
           </div>
           <Map />
           <div style={{width: isMobile ? "80%" : "75%" }} className="animate-slide-up">
@@ -122,7 +124,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Start of Legend */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "25%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "75%" : "25%" }}>
           <h2 className="m-4 text-lg text-white" style={{ fontFamily: "nine" }}>
             Welcome to the Era's Tour Tracker! International dates and locations will be updated soon ☺
           </h2>
@@ -152,7 +154,7 @@ const App: React.FC = () => {
       <div className="flex flex-col md:flex-row" style={{}}>
 
         {/* Surprise Song Analytics */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-5 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
           <h2 className="p-5 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Surprise Song Analytics
           </h2>
@@ -177,7 +179,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Setlist Analytics */}
-        <div className="bg-gray-800 shadow-lg rounded-lg p-6 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-5 m-7 animate-fade-in" style={{ width: isMobile ? "80%" : "90%" }}>
 
           <h2 className="p-5 m-3 text-3xl text-white font-semibold" style={{ fontFamily: "era" }}>
             Setlist Songs
