@@ -19,7 +19,7 @@ interface MarkerData {
 
 const App: React.FC = () => {
   const GAYLE = "./images/gayle.png";
-  const PB = "./images/PhoebeBridgers.png";
+  const PB = "./images/phoebe-ghost.png";
   const paramore = "./images/paramore.png";
   const red = "./images/girl_in_red.png";
   const muna = "./images/muna.png";
@@ -106,7 +106,7 @@ const App: React.FC = () => {
             <img src={muna} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
             <img src={haim} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
             <img src={paramore} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
-            <img src={PB} style={{ padding: 10, display: 'inline-block', verticalAlign: 'middle', width: 100, margin: 10 }} />
+            <img src={PB} style={{ padding: 10, display: 'inline-block', verticalAlign: 'middle', width: 40, margin: 10 }} />
             <img src={ga} style={{ display: 'inline-block', verticalAlign: 'middle', width: 100, margin: 10 }} />
             <img src={bbdb} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
             <img src={owenn} style={{ display: 'inline-block', verticalAlign: 'middle', width: 75, margin: 10 }} />
@@ -115,7 +115,7 @@ const App: React.FC = () => {
 
           <h2
             className="m-4 text-xl text-white font-semibold flex items-center animate-slide-in"
-            style={{ fontFamily: "nine" }}
+            style={{ fontFamily: "era" }}
           >
             <span>{`Next Openers: ${city_opener}`}</span>
           </h2>
