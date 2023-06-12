@@ -7,7 +7,7 @@
 	},
 	{
 		"album":"Fearless",
-		"songs": 10,
+		"songs": 11,
 		"color": "#F1C686",
 		"font": "fearless"
 	},
@@ -25,7 +25,7 @@
 	},
 	{
 		"album":"1989",
-		"songs": 7,
+		"songs": 8,
 		"color": "#B0D9E9",
 		"font": "nine"
 	},

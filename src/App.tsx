@@ -171,7 +171,7 @@ const App: React.FC = () => {
             Surprise Song Tracker Website
           </a>
           <p className="text-white text-lg ml-5 " style={{ fontFamily: "folklore" }}>
-            Updated Jun 10, 2023 (Michigan Night 1)
+            Updated Jun 12, 2023 (Michigan Night 2)
           </p>
           
         </div>

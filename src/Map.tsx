@@ -23,7 +23,7 @@ const MapComponent: React.FC = () => {
 
   useEffect(() => {
     const newMap = L.map('map').setView([37.0902, -95.7129], 4);
-    
+
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; OpenStreetMap contributors',
@@ -58,7 +58,7 @@ const MapComponent: React.FC = () => {
           iconUrl: completedIcon,
         });
 
-      } else if (markerDate ==  currentDate){
+      } else if (markerDate == currentDate) {
         markerOptions.icon = L.icon({
           ...customIcon.options,
           iconUrl: redIcon,
@@ -73,14 +73,14 @@ const MapComponent: React.FC = () => {
       }
 
       const GAYLE = "./images/gayle.png";
-  const PB = "./images/phoebe-ghost.png";
-  const paramore = "./images/paramore-logo.png";
-  const red = "./images/girlinredlogo.png";
-  const muna = "./images/muna-logo2.png";
-  const ga = "./images/gracieAbrams.png";
-  const haim = "./images/haim.png";
-  const bbdb = "./images/bbdb.png";
-  const owenn = "./images/owenn.png";
+      const PB = "./images/phoebe-ghost.png";
+      const paramore = "./images/paramore-logo.png";
+      const red = "./images/girlinredlogo.png";
+      const muna = "./images/muna-logo2.png";
+      const ga = "./images/gracieAbrams.png";
+      const haim = "./images/haim.png";
+      const bbdb = "./images/bbdb.png";
+      const owenn = "./images/owenn.png";
 
       const getOpenerIcons = (openers: string[]) => {
         const openerIcons = openers.map((opener, index) => {
@@ -106,14 +106,14 @@ const MapComponent: React.FC = () => {
               icon = `<img src=${ga} alt="gracie abrams" width="2000px" style="padding:3px" />`;
               break;
             case 'HAIM':
-                icon = `<img src=${haim} alt="haim" width="80px" style="padding:3px"/>`;
-                break;
+              icon = `<img src=${haim} alt="haim" width="80px" style="padding:3px"/>`;
+              break;
             case 'beabadobee':
-                icon = `<img src=${bbdb} alt="bbdb" width="80px"style="padding:3px" />`;
-                break;
+              icon = `<img src=${bbdb} alt="bbdb" width="80px"style="padding:3px" />`;
+              break;
             case 'OWENN':
-                icon = `<img src=${owenn} alt="owenn" width="80px" style="padding:3px"/>`;
-                break;
+              icon = `<img src=${owenn} alt="owenn" width="80px" style="padding:3px"/>`;
+              break;
           }
 
           return icon;
