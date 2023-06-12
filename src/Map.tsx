@@ -94,7 +94,7 @@ const MapComponent: React.FC = () => {
               icon = `<img src=${red} alt="girl in red" width="60px" style="padding:3px"/>`;
               break;
             case 'Phoebe Bridgers':
-              icon = `<img src=${PB} alt="Phoebe Bridgers" width="190px" style="padding:3px" />`;
+              icon = `<img src=${PB} alt="Phoebe Bridgers" width="40px" style="padding:3px" />`;
               break;
             case 'Paramore':
               icon = `<img src=${paramore} alt="paramore" width="80px" style="padding:3px" />`;
@@ -124,7 +124,7 @@ const MapComponent: React.FC = () => {
 
       const openerIcons = getOpenerIcons(openers);
       const mapMarker = new Marker([lat, lon], markerOptions).bindPopup(`
-          <div style="background-color: silver; font-family: nine; color: white; padding: 10px; margin-bottom: 10px;">
+          <div style="background-color: darkred; font-family: nine; color: white; padding: 10px; margin-bottom: 10px;">
         
           <b>${city}</b><br />
           Date: ${date}<br />
