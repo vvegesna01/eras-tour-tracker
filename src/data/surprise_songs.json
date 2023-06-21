@@ -7,19 +7,19 @@
 	},
 	{
 		"album":"Fearless",
-		"songs": 11,
+		"songs": 12,
 		"color": "#F1C686",
 		"font": "fearless"
 	},
 	{
 		"album":"Speak Now",
-		"songs": 6,
+		"songs": 7,
 		"color": "#CCACCD",
 		"font": "Speak-Now"
 	},
 	{
 		"album":"RED",
-		"songs": 12,
+		"songs": 13,
 		"color": "#7E3745",
 		"font": "red"
 	},
